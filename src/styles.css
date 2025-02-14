@@ -117,4 +117,7 @@
   .calculadora {
     width: 300px;
   }
+  .lcd-lower {
+    font-size: 25px;
+  }
 }
