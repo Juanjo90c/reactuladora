@@ -1,0 +1,120 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.calculadora {
+  width: 400px;
+  height: auto;
+  padding: 18px;
+  padding-top: 48px;
+  background-color: #2c3e50;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 15px  rgb(20, 20, 20);
+  box-sizing: border-box;
+}
+
+.lcd-display {
+  width: 95%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  background-color: #102542; 
+  color: #00FFFF;           
+  padding: 10px;
+  font-family: 'LCDMono', monospace; 
+  font-weight: 100;
+  border-top: 1px solid #2a4a6a; 
+  border-left: 1px solid #2a4a6a;
+  border-right: 1px solid #0d1c2e;  
+  border-bottom: 1px solid #0d1c2e
+}
+
+.lcd-line {
+  text-align: right;
+  padding: 5px;
+}
+
+.lcd-upper {
+  display: flex;
+  font-size: 20px;
+  opacity: 0.8;
+  overflow-x:hidden;
+  overflow-y: hidden;
+  justify-content: flex-end;
+}
+
+.lcd-lower {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.calcbutton {
+  width: 90%;
+  border-radius: 8px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.calcbutton button {
+  background-color: transparent;
+  border: none;
+  padding: 0.4em 0.5em;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.calcbutton:hover {
+  background-color: #0f0f0f;
+}
+
+.operator {
+  background-color: #868585;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #4d4d4d;
+}
+
+.special {
+  background-color: #d30d0d;
+  color: white;
+}
+
+.special:hover {
+  background-color: #af0c0c;
+}
+
+@media (orientation: portrait) {
+  .calculadora {
+    width: 300px;
+  }
+}
